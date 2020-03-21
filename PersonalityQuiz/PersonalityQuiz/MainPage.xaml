@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PersonalityQuiz"
+             x:Class="PersonalityQuiz.MainPage"
+             Title="Warhammer 40k Personality Quiz">
+    <ScrollView VerticalOptions="FillAndExpand"
+                    Margin="10">
+        <StackLayout>
+        
+            <Label x:Name="label"
+               Text="Do you think duty and responsibility are some of the most important things? "
+               FontSize="Large"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="Center" />
+
+        <Button Text="True"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked1" />
+        <Button Text="False"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked2" />
+        <Label x:Name="label2"
+               Text="Do you prefer rationality and science over faith and superstition? "
+               FontSize="Large"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="Center" />
+
+        <Button Text="True"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked3" />
+        <Button Text="False"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked4" />
+        <Label x:Name="label3"
+               Text="Do you believe that pleasure is one of the most important pursuits? "
+               FontSize="Large"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="Center" />
+
+        <Button Text="True"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked5" />
+        <Button Text="False"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked6" />
+        <Label x:Name="label4"
+               Text="Do you believe that death and decay ultimately lead to rejuvenation?"
+               FontSize="Large"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="Center" />
+
+        <Button Text="True"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked7" />
+        <Button Text="False"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked8" />
+        <Label x:Name="label5"
+               Text="Do you believe that ultimately there is a good and evil that are mortal enemies?"
+               FontSize="Large"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="Center" />
+
+        <Button Text="True"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked9" />
+        <Button Text="False"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked10" />
+            <Button Text="Submit Results"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="SubmitResults" />
+            <Label Text="{Binding MyStringProperty}"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
