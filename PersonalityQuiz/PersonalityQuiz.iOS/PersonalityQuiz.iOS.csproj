@@ -157,4 +157,7 @@
       <Name>PersonalityQuiz</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Emperor.jpg" />
+  </ItemGroup>
 </Project>

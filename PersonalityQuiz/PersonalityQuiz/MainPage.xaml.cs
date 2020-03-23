@@ -122,5 +122,10 @@ namespace PersonalityQuiz
 
             MyStringProperty = yourPersonality; 
         }
+        void OnSwiped(object sender, SwipedEventArgs e)
+        {
+            _label.Text = $"You swiped: {e.Direction.ToString()}";
+        }
+
     }
 }

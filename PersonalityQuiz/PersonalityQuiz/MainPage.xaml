@@ -7,7 +7,7 @@
     <ScrollView VerticalOptions="FillAndExpand"
                     Margin="10">
         <StackLayout>
-        
+            <Image Source="Emperor.jpg" />
             <Label x:Name="label"
                Text="Do you think duty and responsibility are some of the most important things? "
                FontSize="Large"
@@ -78,6 +78,18 @@
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                 Clicked="OnButtonClicked10" />
+            <!--what I tried to get to work:-->
+            <!--<Label Text="Swipe inside the box with a single finger." />
+            <BoxView Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    --><!-- Can also set a swipe threshold on each gesture recognizer --><!--
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label x:Name="_label" Text="You swiped: "/>-->
             <Button Text="Submit Results"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
